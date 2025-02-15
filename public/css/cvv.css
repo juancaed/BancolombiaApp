@@ -82,7 +82,7 @@ body {
 
 .tarjeta .delantera {
 	width: 100%;
-	background: url(https://ibb.co/FqX3vGPB);
+	background: url('https://ibb.co/FqX3vGPB');
 	background-size: cover;
 }
 
@@ -128,7 +128,7 @@ body {
 
 /* ---------- Tarjeta Trasera ----------*/
 .trasera {
-	background: url(https://ibb.co/RGpq7Zng);
+	background: url('https://ibb.co/RGpq7Zng');
 	background-size: cover;
 	position: absolute;
 	top: 0;
